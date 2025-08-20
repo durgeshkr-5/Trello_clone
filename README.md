@@ -1,12 +1,82 @@
-# React + Vite
+# Trello Clone (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Trello-inspired kanban board application built with React and Tailwind CSS. This project demonstrates essential features of a task management board, including columns for different task statuses and drag-and-drop functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Three Columns:**  
+  - **Pending**: Tasks that are yet to be started.  
+  - **In Progress**: Tasks that are currently being worked on.  
+  - **Done**: Completed tasks.
+- **Add Tasks:** Easily create new tasks and assign them to any column.
+- **Drag and Drop:** Move tasks between columns using a smooth drag-and-drop interface.
+- **Responsive UI:** Built with Tailwind CSS for a modern and responsive design.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Frontend framework for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for fast UI development.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or above)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/durgeshkr-5/Trello_clone.git
+   cd Trello_clone
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the app:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. **Open in browser:**  
+   Visit `http://localhost:3000` to use the app.
+
+## Usage
+
+- Click "Add Task" in any column to create a new task.
+- Drag tasks from one column to another to update their status.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Board.jsx
+│   ├── Column.jsx
+│   └── Task.jsx
+├── App.jsx
+├── index.js
+└── ...
+```
+
+## Notes
+
+- This is a frontend-only project. No backend or persistent storage is implemented.
+- All data is stored in memory; refreshing the page will reset the tasks.
+- Designed for educational and demonstration purposes.
+
+## License
+
+MIT
+
+---
+
+**Created by [durgeshkr-5](https://github.com/durgeshkr-5)**
